@@ -115,16 +115,13 @@ header section h1 {
   }
 
   header nav ul li {
-    font-size: 18px;
+    font-size: 40px;
   }
 
   header nav h5 {
     display: none;
   }
 
-  header section h1 {
-    font-size: 20px;
-  }
 }
 
 @media (max-width: 640px) {
@@ -145,7 +142,7 @@ header section h1 {
 }
 
 #about article {
-  line-height: 30px;
+  font-size: 15px;
 }
 
 /* Skills */
@@ -221,6 +218,18 @@ header section h1 {
 }
 
 @media (max-width: 1024px) {
+  #about h2 {
+    margin-top: 45px;
+  }
+
+  #about article {
+    font-size: 10px;
+  }
+
+  #skills h2 {
+    margin-top: 45px;
+  }
+
   #skills section > div {
     display: flex;
     flex-direction: column;
@@ -228,13 +237,35 @@ header section h1 {
   }
 
   #skills .section-title {
+    font-size: 35px;
     margin-top: 10px;
   }
 
+  #skills li {
+    height: 150px;
+  }
+
+  #skills li h4 {
+    font-size: 25px;
+  }
+
+  #skills li img {
+    width: 90px;
+    display: inline-block;
+    margin-right: 50px;
+  }
+  
   #skills li img.django-img,
   #skills li img.axios-img {
-    width: 50px;
-    margin-right: 10px;
-    margin-left: 0;
+    width: 120px;
+    margin-right: 40px;
+    margin-left: -20px;
+  }
+
+  #skills li > div {
+    width: 600px;
+    height: 40px;
+    background-color: #1f2937;
+    grid-area: prog;
   }
 }
